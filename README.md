@@ -52,18 +52,6 @@ pnpm dev:frontend
 
 后端运行 `python -m uvicorn main:app --app-dir backend --host 127.0.0.1 --port 8088 --workers 1`。当前消息总线和本地 Qdrant 使用单进程。持久化 Redis、MySQL、向量目录、工作区和原文目录。以前仅保存在内存中的向量需要从原文重新索引。`GET /auth/ready` 检查 MySQL 账号表、认证 Redis 和业务 Redis。默认 Playwright MCP 依赖 `npx`。面向不可信用户开放本机工具前，需要隔离 Shell 和 MCP 执行环境。
 
-### 导入旧账号
-
-若有原先的 SQLite 账号库，先停止后端写入，保留源库备份。完成 `init-db` 后，在 `backend` 目录执行以下命令。以前配置过 `AUTH_DB_PATH` 的部署应将 `--source` 改为实际文件。
-
-```powershell
-.\.venv\Scripts\python.exe -m auth.manage import-sqlite --source .\data\auth.sqlite3
-```
-
-该命令只向空的 MySQL 账号表写入账号和旧工作区映射，保留账号 ID、密码哈希和业务身份，可继续使用原密码和已有资源。全新部署完成 `init-db` 后即可注册。
-
-有旧的业务身份时，在 `backend` 下运行 `python -m auth.manage list-legacy` 查看，再用 `python -m auth.manage bind-legacy --username <账号> --legacy-id <旧标识>` 预览。确认后使用同一命令加 `--apply`。
-
 ## 验证
 
 ```powershell
