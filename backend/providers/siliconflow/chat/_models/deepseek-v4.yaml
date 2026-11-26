@@ -1,0 +1,8 @@
+# 保留厂商完整模型 ID，不能与 DeepSeek 官方站的模型名混用。
+name: Pro/deepseek-ai/DeepSeek-V4
+label: DeepSeek V4 Pro
+status: active
+input_types: [text/plain]
+output_types: [text/plain, application/x-thinking]
+context_size: 65536
+output_size: 32768

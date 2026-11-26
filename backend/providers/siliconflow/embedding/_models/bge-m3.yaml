@@ -1,0 +1,7 @@
+name: BAAI/bge-m3
+label: BGE M3
+status: active
+input_types: [text/plain]
+output_types: [application/x-embedding]
+context_size: 8192
+dimensions: 1024

@@ -1,0 +1,8 @@
+name: Qwen/Qwen3-Embedding-0.6B
+label: Qwen3 Embedding 0.6B
+status: active
+input_types: [text/plain]
+output_types: [application/x-embedding]
+context_size: 32768
+dimensions: 1024
+supported_dimensions: [64, 128, 256, 512, 768, 1024]

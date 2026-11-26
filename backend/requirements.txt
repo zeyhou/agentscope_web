@@ -1,0 +1,7 @@
+agentscope[service,storage-redis,rag,vdb-qdrant,channel,realtime,tools] @ https://github.com/agentscope-ai/agentscope/archive/1a53ecdeaea83ba4ba099e1b2ac813d20d048c89.tar.gz
+argon2-cffi==25.1.0
+python-multipart==0.0.34
+PyYAML==6.0.4
+SQLAlchemy[asyncio]==2.0.58
+asyncmy==0.2.18
+python-dotenv==1.2.4

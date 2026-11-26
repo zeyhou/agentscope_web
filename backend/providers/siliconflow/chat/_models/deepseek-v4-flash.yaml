@@ -1,0 +1,8 @@
+# 项目采用保守上下文配置，模型权限与实际上限以硅基流动控制台为准。
+name: deepseek-ai/DeepSeek-V4-Flash
+label: DeepSeek V4 Flash
+status: active
+input_types: [text/plain]
+output_types: [text/plain, application/x-thinking]
+context_size: 65536
+output_size: 32768

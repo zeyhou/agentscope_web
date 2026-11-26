@@ -1,0 +1,43 @@
+# Dependencies
+node_modules
+.venv
+pnpm-lock.yaml
+
+# Build outputs
+dist
+build
+.next
+out
+tmp
+backend/data
+backend/workspaces
+backend/blobs
+
+# Cache
+.cache
+.turbo
+.vite
+
+# Logs
+*.log
+logs
+
+# Environment
+.env
+.env.*
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated files
+coverage
+*.min.js
+*.min.css
+
+# Claude
+.claude

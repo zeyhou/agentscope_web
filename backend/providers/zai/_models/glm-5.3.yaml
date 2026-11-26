@@ -1,0 +1,14 @@
+# Z.ai 官方 Coding Plan 模型目录；保留在项目内，不修改框架内置模型卡。
+name: glm-5.3
+label: GLM-5.3
+status: active
+input_types:
+  - text/plain
+output_types:
+  - text/plain
+  - application/x-thinking
+context_size: 1000000
+output_size: 131072
+parameter_overrides:
+  thinking_enable:
+    hidden: true
